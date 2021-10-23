@@ -1,0 +1,17 @@
+Page obj model is a pattern for enhancing test maintanace and reducing code duplication
+
+POM--Page Object Model
+is a design pattern which allows us to enhace test maintence and reduce our code duplications
+
+Advantages of POM:
+1.code reusability
+2.code maintainability
+3.readibility
+
+2 ways to design POM
+
+How to implement :
+1. page object model without pagefactory
+2. page object model with page factory
+
+PageFactory is a class which allows us to interact with stored elements in each class

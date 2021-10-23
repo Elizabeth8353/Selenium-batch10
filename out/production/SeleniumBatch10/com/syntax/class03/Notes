@@ -1,0 +1,75 @@
+Selenium class 3
+Why do we need X-path or Css Selector?
+--developers will not provide all the locators in html
+--by using xpath and css selectors we can identify elements with any given attribute
+
+What is an Xpath ?
+-xpath is a like query language which helps us to identify elements
+uniquely on the webpage
+
+Types of xpath:
+Absolute xpath-->Starts from the starting node in html (not comenly used because website might change and nodes might be deleted or added
+it always starts with single slash (/)
+e.g /html/head (or body because since they are sibilings we can't do html/head/body because body is not inside head and viseversa )
+if we want to skip a div(sibiling) e.g =/html/body/div/div[2]  use index
+/div(or div[2] to go to second sibiling div)
+
+Relative XPath:
+Relative Xpath starts from any node in html it starts with double slash ( //)
+Syntax for Relative x-path:
+//tagName[@attribute='atributeValue']
+e.g  input[@id='email']
+
+Identifying elements by its text:
+//tagName[text()='textValue']
+
+e.g a[text()='Create New Account']
+
+identify by using contains method
+Contains:
+//tagName[contains(@attribute,'partialAttributeValue')]
+example: //input[contains(@placeholder,'Email')]
+
+Starts with:
+-will identify the element with starting partial value
+//tagname[starts-with(@attribute,'partial starting attribute value')]
+example:
+//button[starts-with(@data-testid,'royal')]  using attribute
+//button[starts-with(text(),'Log In')]      using text
+
+Ends-with was used in xpath 1.0 we are using 2.0 and this method is not available
+
+<div> Division (basically contains webelement)
+<img> Image
+<h> header
+<p> paragraph
+<li> List
+<ul> unordered list
+<ol> order List
+
+Advance Xpath
+is based on parent and child and sibiling and ansestor relationships
+parent is the container that holds our child elements
+ancestor anything above the parent
+
+-identifying elements by fallowing sibiling
+//tagname[@attribute = 'attribute value']/following-sibling::tagname
+ex.//input[@id='calFromDate']/following-sibling::img
+
+- Identifying elements by Proceding sibiling
+//tagname[@attribute = 'attribute value']/preceding-sibling::tagname
+exmp: //span[text()='& Orders']/preceding-sibling::span
+
+-Identify element parent
+//tagname[@attribute = 'attribute value']/parent::parentTagname
+exmp: //span[text()='& Orders']/parent::a
+
+-To ansestor
+//tagname[@attribute = 'attribute value']/ancestor::ancestorTagname
+exmp:// input[@name='email']/ancestor::form
+
+identify element by index
+(//img[@class='ui-datepicker-trigger'])[2]
+
+
+

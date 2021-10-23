@@ -1,0 +1,28 @@
+Class 07
+Handeling multiple windows
+In order to handle multiple windows we will be using:
+getWindowHandle()=gives you the unike Id for that tab window own unique adress
+getWindowHandles()
+
+Window Handle:
+is a unique ID that holds the address of the window or a tab
+Its is approximately 40 alphanumeric character ID
+
+Syncronization
+-is a process of bringing the speed of two or more components to the same level
+in this case we are bringing our script and page load to the same speed level
+
+Thread.sleep()- it's a static wait it's not going to change according to the element or the page load
+its  a static wait/unconditional wait
+
+Types of selenium:
+Implicit wait=its a global wait tells selenium to wait a certain amount of time throughout the program
+R. it tells the webdriver to wait for a certain amount of time before throwing an exception.It's usually set to 20 sec works with findElement method
+(if element found in less secounds the rest of the time set will be ignored but if not found within the time set will throw an exeption Error)
+Implicit wait is usually set to 20 sec. if your element is found in any time between the remaining time that time will be ignored and your script
+will move on to the line or action.If element is not found in a given time, Only then you will get exemption(DOES NOT WORK WITH FINDELEMENTS or list)
+only works with FindElement.
+
+Explicit wait=
+
+Fluent wait=

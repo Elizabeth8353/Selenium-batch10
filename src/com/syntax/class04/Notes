@@ -1,0 +1,51 @@
+Class 4
+
+Css (Cascading Styling Sheet)
+It's another way of locating elements on the webpage
+Css cant identify element by text
+
+Syntax:
+tagname[attribute='attribute value']
+ex : button[type='submit']
+===========================================================================
+Shortcut for Css:
+-className --> "."    syntax: tagname.classNameValue
+                      ex: input.form-control
+
+
+Shortcut for ID
+-ID --> " # "        syntax: tagname#IDValue
+                     ex: input#twotabsearchtextbox
+
+ =======================================================================
+ Css Methods
+ -contains method: "*"  represents contains method
+ tagname[attribute*='partial attribute value']
+ ex: input[id*='two']
+
+ -StartsWith method in Css:  "^" represents starts with method in css
+ tagname[attribute^='startingAttributeValue']
+ input[type^='pass']
+
+ -EndsWith method in Css: $ symbol represents end-with method in Css
+
+ img[src $='syntax.png']
+
+ ====================================================================
+ WebElements Commands: method or actions that we can perform on elements sometimes we can get element state on the page
+ consist of several methods where we can perform actions and get element state
+ on webpage
+click()
+sendKeys()
+ isEnable()--boolean value
+ isDisplayed()--boolean value
+ isSelected()--boolean value
+ clear()--void
+ getText()--String
+ getAttribute()--String value
+ submit()--void  - works like click most of the time used in submiting something or clicking of or finishing something
+ submit applicable for form and click applicable for anything
+
+ ====================================================================
+
+

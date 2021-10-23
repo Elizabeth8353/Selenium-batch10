@@ -1,0 +1,52 @@
+class 08
+
+implicit wait:
+will be applied for findelement() method
+
+Explicit wait or Webdriver wait:
+is used to tell the webdriver to wait for a certain condition before throwing an exception for a specified condition
+
+Explicit wait works with ExpectedConditions class and waits until a certain conditions are met or the given time is achived
+
+h= headers when they have h1 h2 h3 they get changed during the development of the application they usually get changed
+so try not to use it in general instead use wild card * instead of the tag name the * identifies any tag name can be replace
+by any tag name
+
+* sign in xpath is a wild card which can identify any tag name
+ //*[contains(text(),'Welcome')]
+
+Fluent wait --> consider as a global just like explicit
+its used to tell Webdriver to wait for certain condition as well as it's frequency
+before throwing an exception
+
+=============================================================
+WebTables:
+they can be static and dinamic, it is a webelement, which is constructed by having rows and columns
+Webtables are elements on the webpage,which are constructed by having rows and columns
+
+Types of Webtables:
+1.Static webtables
+2.dynamic webtables
+
+Webtables consist of different sections or parts:
+<table>
+    <thead>
+        <tr>
+            <th></th>--->column data or heading
+        <tr>
+     <thead>
+     <tbody>
+        <tr>
+            <td></td> --> table data
+        </tr>-->/ is closing structure of your tag
+     </tbody>
+</table>
+
+tr=stands for table rows in our webtables
+th= stands for table heading
+td= stands for table data
+
+=========================================================================
+Dynamic tables
+
+we know its a dynamic table because has check boxes and option to add and delete options

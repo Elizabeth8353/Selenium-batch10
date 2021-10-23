@@ -1,0 +1,12 @@
+Actions class:
+it's a tool to double click, drag and drop
+we use to interact with mouse and keys
+
+javascript executor:
+is an interface that helps you execute javascript through selenium
+
+POM
+1.testBase-->opening and closing of browser
+2.utility-->common methods that we have
+3.pages-->will have the webelements of the different pages of application
+4.tests-->the test cases

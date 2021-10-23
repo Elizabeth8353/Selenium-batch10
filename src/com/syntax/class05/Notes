@@ -1,0 +1,33 @@
+Selenium class 5:
+check box typically lets us choose multiple elements, radio boxes only 1 choice
+
+Handling checkboxes and radiobuttons:
+-if you have only 1 checkbox or radiobotton - you can just click on it
+-if you have multiple choices-store then in a list and loop through them
+
+DropDowns
+-dropdown is a menu which allows user to select one or multiple options
+
+Types of dropdowns:
+1.single select (you can select only one option)
+2.Multiple select (you can select multiple options)
+
+Handling dropdowns:
+1.click on dropdown and click on the option
+2.Using Select class (in order to use select class we need to make sure our drop down has select tag)
+the select class contains methods that we need to interact with our object constructor requires Webelement(dropdown element)
+
+Selecting an option from dropdown can be done in 3 ways :
+1.by index
+2.by visible text
+3.by value
+
+In order to deselect any option in drowndown:
+--Make sure your DD is multiple select
+deselectByValue()
+deselectByVisibleText()
+deselectByIndex()
+deselectAll()
+
+indexing in xpath starts from 1
+indexing in java starts from 0
